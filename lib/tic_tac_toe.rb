@@ -131,3 +131,16 @@ def winner(board)
   end
   return nil
 end 
+
+
+def play(board)
+  while !over?(board)
+    turn(board)
+  end 
+  
+  if won?(board)
+    puts "Congratulations, winner #{winner(boad)}!"
+  else 
+    puts "The game was a draw"
+  end
+end 
