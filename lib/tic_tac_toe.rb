@@ -65,9 +65,9 @@ end
 
 def current_player(board)
   if turn_count(board).odd?
-    return "X"
+    return "O"
   end 
-  return "O"
+  return "X"
 end 
 
 def position_taken?(board, index)
