@@ -54,7 +54,13 @@ end
 
 def turn_count(board)
   count = 0 
-  board.all?
+  board.each |item|
+    if item == "O" || item == "X"  
+      count +=1 
+    end 
+  end 
+  
+  return count 
 end 
 
 
