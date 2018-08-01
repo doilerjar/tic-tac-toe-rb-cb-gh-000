@@ -124,3 +124,10 @@ def over?(board)
   return false 
 end 
 
+
+def winner(board)
+  if won?(board)
+    won?(board).each {|index| return board[index]}
+  end
+  return nil
+end 
